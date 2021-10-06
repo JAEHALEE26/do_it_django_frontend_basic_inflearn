@@ -3,6 +3,8 @@
     <head>
         <title>About me | 지수나라!</title>
         <link href="./nav.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="./add_two_numbers.js"></script>
+        <script type="text/javascript" src="./what_time_is_it.js"></script>
     </head>
     <nav>
         <a href="./index.html">Home</a>
@@ -11,12 +13,26 @@
     </nav>
 
         <h1>About me</h1>
-        <h2>블랙핑크 지수입니다.</h2>
+        <h2>안녕안녕 나는 지수야~</h2>
     
 
         <p>나는 디올 글로벌 앰버서더 지수다!</p>
         <a href="./index.html">첫 화면으로 가기</a>
 
+
+        <button onclick="whatTimeIsIt()">현재시각</button>
+        <hr/>
+
+
+        <label for="inputA">지슝이에게 한 마디 </label>
+        <input id=inputA value=1 onkeyup="doSomething()">
+
+        <label for="inputB">지슝이에게 응원해!</label>
+        <input id=inputB value=1 onkeyup="doSomething()">
+
+        <p>
+            <span id="valueA">1</span> + <span id="valueB">1</span> = <span id="valueC">1</span> 입니다.    
+        </p>
         <hr/>
 
         <img src="./images/jennierubyjane_163304161072039.jpg" width="600px">
