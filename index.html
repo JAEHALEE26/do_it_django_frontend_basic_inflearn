@@ -11,38 +11,78 @@
 </head>
 
 <body>
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./blog_list.html">Blog</a>
-        <a href="./about_me.html">About me</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">지수나라</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about_me.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog_list.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <h1>온 세상이 바뀌어가도</h1>
-    <h2>아직 나는 그대론 걸</h2>
-    <h3>내가 걸어가는 이 길을 꿈꾸던</h3>
-    <h4>매일을 춤추던</h4>
-    <h5>처음 그 자리에 남아 있는 걸</h5>
+    <div class="container">
+        <div class="row my-4">
+            <div class="col-9">
+                <h1>온 세상이 바뀌어가도</h1>
+                <h2>아직 나는 그대론 걸</h2>
+                <h3>내가 걸어가는 이 길을 꿈꾸던</h3>
+                <h4>매일을 춤추던</h4>
+                <h5>처음 그 자리에 남아 있는 걸</h5>
+                <button onclick="whatTimeIsIt()">현재시각</button>
+            </div>
+            <div class="col-3">
+                <img src="./images/73DFFE07-9EFA-414D-95EA-B57B04970557.jpg" class="img-fluid">
+            </div>
+        </div>
 
-    <button onclick="whatTimeIsIt()">현재시각</button>
+        <hr />
+        <div class="row my-4">
+
+            <label for="inputA">지슝이 계산기</label>
+            <input id=inputA value=1 onkeyup="doSomething()">
+
+            <label for="inputB">+</label>
+            <input id=inputB value=1 onkeyup="doSomething()">
+
+            <p>
+                <label>는? </label>
+                <span id="valueA">1</span> + <span id="valueB">1</span> = <span id="valueC">1</span> 입니다.
+            </p>
+        </div>
+
+    </div>
+
     <hr />
 
-
-    <label for="inputA">지슝이에게 한 마디 </label>
-    <input id=inputA value=1 onkeyup="doSomething()">
-
-    <label for="inputB">지슝이에게 응원해!</label>
-    <input id=inputB value=1 onkeyup="doSomething()">
-
-    <p>
-        <span id="valueA">1</span> + <span id="valueB">1</span> = <span id="valueC">1</span> 입니다.
-    </p>
-
-
-    <p>인별</p>
-    <a href="https://www.instagram.com/sooyaaa__/">sooyaa__</a>
-
-    <hr />
-
-    <img src="./images/73DFFE07-9EFA-414D-95EA-B57B04970557.jpg" width="600px">
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
